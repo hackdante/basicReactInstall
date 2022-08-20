@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home/Home";
 import { Navbar } from "./components/globals/navbar/Navbar";
 import { Footer } from "./components/globals/footer/Footer";
+import { SimpleCounter } from "./components/TEST/simpleCounter/SimpleCounter";
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="test/counter" element={<CounterComponent />} />
+        <Route
+          path="test/simple-counter"
+          element={<SimpleCounter counterIni={4} />}
+        />
       </Routes>
       <Footer />
     </div>
