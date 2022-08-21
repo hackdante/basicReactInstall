@@ -5,6 +5,7 @@ import { Home } from "./pages/home/Home";
 import { Navbar } from "./components/globals/navbar/Navbar";
 import { Footer } from "./components/globals/footer/Footer";
 import { SimpleCounter } from "./components/TEST/simpleCounter/SimpleCounter";
+import { Contact } from "./components/forms/contact/Contact";
 
 function App() {
   return (
@@ -14,10 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="test/counter" element={<CounterComponent />} />
-        <Route
-          path="test/simple-counter"
-          element={<SimpleCounter counterIni={4} />}
-        />
+        <Route path="test/simple-counter" element={<SimpleCounter />} />
+        <Route path="test/formik" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
