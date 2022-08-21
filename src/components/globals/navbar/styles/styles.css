@@ -1,0 +1,19 @@
+.navbar {
+  background: var(--primary);
+}
+
+.navbarContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+
+}
+
+
+.navbarItem {
+  color: var(--white);
+  margin-left: 10px;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
