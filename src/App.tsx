@@ -6,6 +6,7 @@ import { Navbar } from "./components/globals/navbar/Navbar";
 import { Footer } from "./components/globals/footer/Footer";
 import { SimpleCounter } from "./components/TEST/simpleCounter/SimpleCounter";
 import { Contact } from "./components/forms/contact/Contact";
+import { Formik } from "./components/forms/formik/Formik";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="test/counter" element={<CounterComponent />} />
         <Route path="test/simple-counter" element={<SimpleCounter />} />
-        <Route path="test/formik" element={<Contact />} />
+        <Route path="test/basic-form" element={<Contact />} />
+        <Route path="test/formik" element={<Formik />} />
       </Routes>
       <Footer />
     </div>

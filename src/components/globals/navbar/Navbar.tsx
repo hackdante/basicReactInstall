@@ -16,6 +16,11 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link to="test/basic-form">
+            <span className="navbarItem">Redux Counter</span>
+          </Link>
+        </li>
+        <li>
           <Link to="test/formik">
             <span className="navbarItem">Formik</span>
           </Link>
